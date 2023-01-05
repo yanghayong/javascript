@@ -41,3 +41,19 @@ const aaa = 124563
 console.log(typeof aaa)
 
 user.printWorks()
+
+// 2. Math Object
+console.log(Math)
+console.log(Math.PI)
+
+// 0 ~ 9 사이의 정수출력
+console.log(Math.floor(Math.random() * 10))
+
+// 1 ~ 10 사이의 정수출력
+console.log(Math.floor(Math.random() * 10) + 1)
+
+// 배열을 랜덤하게 출력
+const food = ["김밥", "라면", "삼겹살", "풀빵", "커피"]
+const randomNum = Math.floor(Math.random() * food.length)
+console.log(randomNum)
+console.log(food[randomNum])
