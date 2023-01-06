@@ -1,3 +1,5 @@
+// 배열 Array
+
 // 1. 배열 만들기
 const arr1 = new Array()
 console.log(arr1)
