@@ -1,11 +1,11 @@
-const price = document.querySelector(".price")
-const count = document.querySelector(".count")
-const sum = document.querySelector(".sum")
-const minus = document.querySelector(".minus")
-const reset = document.querySelector(".reset")
-const plus = document.querySelector(".plus")
+const price = document.querySelector('.price')
+const count = document.querySelector('.count')
+const sum = document.querySelector('.sum')
+const minus = document.querySelector('.minus')
+const reset = document.querySelector('.reset')
+const plus = document.querySelector('.plus')
 
-const btns = document.querySelectorAll("button")
+const btns = document.querySelectorAll('button')
 
 let num = 1
 const unit_price = 12000
@@ -20,13 +20,13 @@ function paintTotalPrice() {
 }
 
 btns.forEach((btn) => {
-  btn.addEventListener("click", function (e) {
+  btn.addEventListener('click', function (e) {
     // console.log(e.target.className)
 
-    if (e.target.className == "plus") {
+    if (e.target.className == 'plus') {
       num++
       paintTotalPrice()
-    } else if (e.target.className == "minus") {
+    } else if (e.target.className == 'minus') {
       num--
       if (num <= 1) num = 1
       paintTotalPrice()

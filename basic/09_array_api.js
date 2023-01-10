@@ -1,6 +1,6 @@
 // array_api
 
-const books = ["html", "css", "javascript"]
+const books = ['html', 'css', 'javascript']
 
 // 1. 배열을 문자열로 만들기
 console.log(books)
@@ -11,8 +11,8 @@ console.log(books)
 
 // 2. 문자열을 배열로 만들기
 {
-  const books2 = "react, vue, angular"
-  const result = books2.split(",")
+  const books2 = 'react, vue, angular'
+  const result = books2.split(',')
   console.log(result)
 }
 
@@ -35,11 +35,11 @@ console.log(books)
 }
 
 const sojus = [
-  { name: "대선", price: 1200, sale: true, score: 86 },
-  { name: "좋은데이", price: 1100, sale: false, score: 92 },
-  { name: "진로", price: 1150, sale: true, score: 80 },
-  { name: "금복주", price: 960, sale: false, score: 60 },
-  { name: "참이슬", price: 1250, sale: true, score: 46 },
+  { name: '대선', price: 1200, sale: true, score: 86 },
+  { name: '좋은데이', price: 1100, sale: false, score: 92 },
+  { name: '진로', price: 1150, sale: true, score: 80 },
+  { name: '금복주', price: 960, sale: false, score: 60 },
+  { name: '참이슬', price: 1250, sale: true, score: 46 },
 ]
 
 // 5, score가  80인 소주를 찾기

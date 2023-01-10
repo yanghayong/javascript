@@ -16,7 +16,7 @@ for (let j = 3; j > 0; j--) {
   console.log(`j는 ${j}`)
 }
 
-const day = ["월", "화", "수", "목", "금", "토", "일"]
+const day = ['월', '화', '수', '목', '금', '토', '일']
 
 for (let index = 0; index < day.length; index++) {
   console.log(day[index])

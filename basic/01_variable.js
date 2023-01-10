@@ -7,9 +7,9 @@
 // 블럭을 무시한다.
 
 {
-  var user = "John"
-  user = "Alice"
-  console.log(user)
+    var user = 'John'
+    user = 'Alice'
+    console.log(user)
 }
 
 console.log(user)
@@ -18,11 +18,11 @@ console.log(user)
 // 읽기, 쓰기가 가능하다.
 
 {
-  let title = "html"
-  console.log(title)
+    let title = 'html'
+    console.log(title)
 
-  title = "css"
-  console.log(title)
+    title = 'css'
+    console.log(title)
 }
 
 // console.log(title)
@@ -31,9 +31,9 @@ console.log(user)
 // 상수 - 읽기만 가능. 변하지 않는다.
 
 {
-  const subject = "야인시대"
-  console.log(subject)
-  // subject = '배트맨'
+    const subject = '야인시대'
+    console.log(subject)
+    // subject = '배트맨'
 }
 
 // 4. 변수의 데이타 타입
@@ -55,15 +55,15 @@ console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다.`)
 
 const a = 1 / 0
 const b = -25 / 0
-const c = "html" / 10
+const c = 'html' / 10
 
 console.log(a)
 console.log(b)
 console.log(c)
 
 // string
-const firstname = "Jonh"
-const lastName = "snow"
+const firstname = 'Jonh'
+const lastName = 'snow'
 const fullName = firstname + lastName
 console.log(fullName)
 console.log(`${firstname} ${lastName}`)

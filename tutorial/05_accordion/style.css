@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.accordion {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.accordion .content {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion .content h2 {
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion .content h2::after {
+  font-family: 'xeicon';
+  content: '\e913';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.accordion .content.active h2::after {
+  content: '\e91a';
+}
+
+.accordion .content .text {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.accordion .content.active .text {
+  height: auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+/* \e913 : + */
+/* \e91a : - */

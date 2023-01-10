@@ -23,13 +23,13 @@ class Car {
   }
 }
 
-const myCar = new Car("sonata", "white")
+const myCar = new Car('sonata', 'white')
 
 console.log(myCar.name)
 console.log(myCar.color)
 myCar.start()
 myCar.stop()
 
-const oldCar = new Car("pony", "red")
+const oldCar = new Car('pony', 'red')
 oldCar.start()
 oldCar.stop()

@@ -7,22 +7,22 @@
 
 // 1. object
 const user = {
-  name: "Picaso",
+  name: 'Picaso',
   age: 30,
-  email: "picaso@gmail.com",
+  email: 'picaso@gmail.com',
   works: [
-    { id: 1, title: "게르니카", price: 25000, like: 400 },
-    { id: 2, title: "아비뇽의 처녀들", price: 35000, like: 750 },
-    { id: 3, title: "우는 여인", price: 80000, like: 1200 },
+    { id: 1, title: '게르니카', price: 25000, like: 400 },
+    { id: 2, title: '아비뇽의 처녀들', price: 35000, like: 750 },
+    { id: 3, title: '우는 여인', price: 80000, like: 1200 },
   ],
   login() {
-    console.log("Picaso logged in!")
+    console.log('Picaso logged in!')
   },
   logout() {
-    console.log("Picaso logged out!!!!!")
+    console.log('Picaso logged out!!!!!')
   },
   printWorks() {
-    console.log("피카소의 대표작")
+    console.log('피카소의 대표작')
     console.log(this)
     this.works.forEach((work) => {
       console.log(
@@ -53,7 +53,7 @@ console.log(Math.floor(Math.random() * 10))
 console.log(Math.floor(Math.random() * 10) + 1)
 
 // 배열을 랜덤하게 출력
-const food = ["김밥", "라면", "삼겹살", "풀빵", "커피"]
+const food = ['김밥', '라면', '삼겹살', '풀빵', '커피']
 const randomNum = Math.floor(Math.random() * food.length)
 console.log(randomNum)
 console.log(food[randomNum])
