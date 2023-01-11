@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-email</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Logo</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          sapiente accusantium maiores.
+        </p>
+      </div>
+      <div class="right">
+        <div class="content">
+          <h2>메일보내기</h2>
+          <form id="contact-form" class="gform">
+            <input type="hidden" name="contact_number" />
+            <input type="hidden" name="subject" value="안녕하세요!!!!" />
+            <label>이름</label>
+            <input type="text" name="name" placeholder="이름" />
+            <label>이메일</label>
+            <input type="email" name="email" placeholder="이메일" />
+            <label>내용</label>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="내용"
+            ></textarea>
+            <button class="btn" type="submit">보내기</button>
+          </form>
+          <!-- <form id="contact-form">
+            <input type="hidden" name="contact_number" />
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send" />
+          </form> -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init("8ksWmS4ek6VBrnWtj")
+      })()
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex-basis: 460px;
+  background-color: #079992;
+  padding: 40px;
+  color: #fff;
+}
+
+.left h1 {
+  font-size: 60px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .content {
+  width: 80%;
+  max-width: 460px;
+}
+
+.right .content .gform {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.gform label {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.gform input,
+.gform textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #f2f7f3;
+  font-size: 16px;
+  color: #99a9af;
+  outline: none;
+}
+
+.gform input::placeholder,
+.gform textarea::placeholder {
+  color: #b5c9d3;
+}
+
+.gform input:focus,
+.gform textarea:focus {
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+}
+
+.gform textarea {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #3c8271;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
