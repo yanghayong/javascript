@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-email</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,17 +39,20 @@
             ></textarea>
             <button class="btn" type="submit">보내기</button>
           </form>
-          <!-- <form id="contact-form">
-            <input type="hidden" name="contact_number" />
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send" />
-          </form> -->
         </div>
+      </div>
+
+      <div class="dimm">
+        <i class="xi-spinner-5 xi-spin"></i>
+      </div>
+
+      <div class="modal">
+        <span>✨</span>
+        <p>
+          메일이 성공적으로<br />
+          발송되었습니다.
+        </p>
+        <button class="close">닫기</button>
       </div>
     </div>
 
