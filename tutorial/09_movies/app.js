@@ -47,12 +47,36 @@ const info = document.getElementById('info')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 
-function showMovie() {
-  console.log('첫번째 영화가 나옵니다.')
+let currentIndex = 0
+
+next.addEventListener('click', function () {
+  currentIndex++
+  if (currentIndex > movies.length - 1) {
+    currentIndex = 0
+  }
+  showMovie(currentIndex)
+})
+
+prev.addEventListener('click', function () {
+  currentIndex--
+  if (currentIndex < 0) {
+    currentIndex = movies.length - 1
+  }
+  showMovie(currentIndex)
+})
+
+function showMovie(currentIndex) {
+  let item = movies[currentIndex]
+
+  poster.src = item.poster
+  num.textContent = item.id
+  title.textContent = item.title
+  director.textContent = item.director
+  info.textContent = item.text
 }
 
 function init() {
-  showMovie()
+  showMovie(currentIndex)
 }
 
 init()
