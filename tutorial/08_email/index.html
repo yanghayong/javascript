@@ -27,11 +27,12 @@
             <input type="hidden" name="contact_number" />
             <input type="hidden" name="subject" value="안녕하세요!!!!" />
             <label>이름</label>
-            <input type="text" name="name" placeholder="이름" />
+            <input id="userName" type="text" name="name" placeholder="이름" />
             <label>이메일</label>
-            <input type="email" name="email" placeholder="이메일" />
+            <input id="email" type="email" name="email" placeholder="이메일" />
             <label>내용</label>
             <textarea
+              id="message"
               name="message"
               cols="30"
               rows="10"
@@ -62,7 +63,7 @@
     ></script>
     <script type="text/javascript">
       ;(function () {
-        emailjs.init("8ksWmS4ek6VBrnWtj")
+        emailjs.init('8ksWmS4ek6VBrnWtj')
       })()
     </script>
     <script src="./app.js"></script>

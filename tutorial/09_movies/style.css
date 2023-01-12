@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.poster {
+  margin-bottom: 16px;
+}
+
+.title_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title_box p {
+  width: 26px;
+  height: 26px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  margin-right: 16px;
+}
+
+#director,
+#info {
+  margin-bottom: 16px;
+}
+
+.btns {
+  text-align: center;
+}
+
+button {
+  padding: 6px 18px;
+}
