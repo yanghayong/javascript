@@ -1,16 +1,16 @@
-const form = document.querySelector("form")
-const input = form.querySelector("input")
-const foodList = document.querySelector(".food_list")
+const form = document.querySelector('form')
+const input = form.querySelector('input')
+const foodList = document.querySelector('.food_list')
 
-const APP_ID = "bd8c0fc8"
-const APP_KEY = "c59f7e86f1ad4f91a95437698e7173bb"
+const APP_ID = '1dbf4157'
+const APP_KEY = '3fa9211bc1489470aa00fe2aa42077a9'
 
-const initQuery = "chicken"
+const initQuery = 'chicken'
 
 function paintRecipe(items) {
   console.log(items)
 
-  let foods = ""
+  let foods = ''
 
   items.map((item) => {
     foods += `<div class="food">
@@ -41,11 +41,11 @@ async function getRecipe(query) {
 function init() {
   getRecipe(initQuery)
 
-  form.addEventListener("submit", function (e) {
+  form.addEventListener('submit', function (e) {
     e.preventDefault()
     const query = input.value
     getRecipe(query)
-    input.value = ""
+    input.value = ''
   })
 }
 

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbitron:wght@500&display=swap');
+
+/* font-family: 'Orbitron', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #666;
+  outline: none;
+}
+
+input[type='text']::placeholder {
+  color: #666;
+}
+
+input[type='text']:focus::placeholder {
+  color: transparent;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  padding: 36px 0;
+}
+
+.header {
+}
+.header_extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.clock {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.todo_form {
+  margin-bottom: 20px;
+}
+.todo_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
+}
+
+.todo_list span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+}
