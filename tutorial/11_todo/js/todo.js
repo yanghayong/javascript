@@ -2,11 +2,16 @@ const form = document.querySelector('.todo_form')
 const input = form.querySelector('input')
 const ul = document.querySelector('.todo_list')
 
-const todos = []
+let todos = []
+
+function saveTodo() {
+  localStorage.setItem('todos', JSON.stringify(todos))
+}
 
 function removeTodo(e) {
-  console.log(e.target.parentNode)
   e.target.parentNode.remove()
+  todos = todos.filter((todo) => todo.id != e.target.parentNode.id)
+  saveTodo()
 }
 
 function paintTodo(text) {
@@ -25,12 +30,22 @@ function paintTodo(text) {
     text: text,
   })
 
+  saveTodo()
   span.addEventListener('click', removeTodo)
+}
 
-  console.log(todos)
+function loadTodo() {
+  const LS_TODOS = localStorage.getItem('todos')
+
+  if (LS_TODOS != null) {
+    const parseTodos = JSON.parse(LS_TODOS)
+    parseTodos.forEach((todo) => paintTodo(todo.text))
+  }
 }
 
 function init() {
+  loadTodo()
+
   form.addEventListener('submit', function (e) {
     e.preventDefault()
     paintTodo(input.value)
