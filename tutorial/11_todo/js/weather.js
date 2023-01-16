@@ -2,13 +2,12 @@ const weather = document.querySelector('.weather')
 const API_KEY = '26a8f813a56d73684d04cdff5a1f7720'
 
 async function getWeather(lat, lon) {
-  console.log(lat, lon)
-
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
 
   const response = await fetch(url)
   const data = await response.json()
-  console.log(data)
+  // console.log(data)
+  weather.innerHTML = `${data.main.temp}°C, ${data.name}`
 }
 
 function success(position) {
