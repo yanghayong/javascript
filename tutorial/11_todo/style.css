@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbitron:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Orbitron:wght@500&display=swap");
 
 /* font-family: 'Orbitron', sans-serif; */
 
@@ -18,21 +18,21 @@ ul {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-input[type='text'] {
+input[type="text"] {
   width: 100%;
   padding: 12px;
   border: 1px solid #666;
   outline: none;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #666;
 }
 
-input[type='text']:focus::placeholder {
+input[type="text"]:focus::placeholder {
   color: transparent;
 }
 
@@ -58,7 +58,7 @@ h1 {
 }
 
 .clock {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .todo_form {
