@@ -47,8 +47,10 @@ function init() {
   loadTodo()
 
   form.addEventListener('submit', function (e) {
+    if (input.value == '') return
     e.preventDefault()
     paintTodo(input.value)
+    input.value = ''
   })
 }
 
